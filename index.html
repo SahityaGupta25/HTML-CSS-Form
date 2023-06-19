@@ -33,7 +33,7 @@ font-family: 'Rowdies', cursive;
             left: 3%;
             transform: translateY(-50%);
             padding: 20px 15px;
-            background-color:rgba(255, 255, 255, 0);
+            background-color:rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(18px);
             border-radius: 16px;
             box-shadow: 3px 3px 4px rgb(201, 178, 52);
@@ -114,6 +114,10 @@ font-family: 'Rowdies', cursive;
 
             /*c2*/
         }
+        #element{
+            font-size: 1.6rem;
+            color: maroon;
+        }
         /* Media Queries */
        @media screen and (max-width: 420px) {
         .inner-box{
@@ -150,6 +154,10 @@ font-family: 'Rowdies', cursive;
                 <p>Fill the Details Carefully</p>
             </header>
             <main class="signup-body">
+                
+          <!-- Typed.js Element -->
+          <span id="element"></span>
+          <!-- ------------------ -->
                 <form action="#">
                     <p>
                         <label for="fullname">Full Name</label>
@@ -178,5 +186,22 @@ font-family: 'Rowdies', cursive;
         <div class="circle c2"></div>
 
     </div>
+     <!-- Typed.js Imported Link (CDN)-->
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+     <script>
+       var typed = new Typed("#element", {
+         strings: [
+           "Huury UP!",
+           "Speed up",
+           "But",
+           "Write Carefully",
+           "&",
+           "Login or Sign Up ",
+          
+         ],
+         typeSpeed: 50,
+       });
+     </script>
 </body>
 </html>
